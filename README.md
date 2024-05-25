@@ -1,8 +1,26 @@
-# React + Vite
+# MEGA e-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+E-commerce project design in React Vite with connection to database in firebase   
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+List any prerequisites needed to install and run your project, for example:
+
+## Dependencies
+ -bootstrap: "^5.3.3",
+    -firebase: "^10.12.1",
+    -localforage: "^1.10.0",
+    -match-sorter: "^6.3.4",
+    -react: "^18.2.0",
+    -react-bootstrap: "^2.10.2",
+    -react-dom: ^18.2.0",
+    -sort-by: "^1.2.0",
+    -sweetalert2: "^11.11.0"
+- npm
+- Node.js
+- React.js Vite
+
+### Installation
+
+- npm install
+- npm run dev

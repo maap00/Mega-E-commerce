@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 function Item ({product}){
 return(
     <Col>
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem', marginBottom: '20px' }}>
         <Card.Img variant="top"
-            src={product.images[2]} />
+            src={product.img} />
         <Card.Body>
-            <Card.Title>{product.title}</Card.Title>
+            <Card.Title>{product.name}</Card.Title>
             <Card.Text>
                 {product.description}
             </Card.Text>

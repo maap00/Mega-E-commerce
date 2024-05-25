@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import ItemDetails from "./ItemDetails"
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-
+import { getItem } from "../firebase/db";
 
 
 export default function ItemDetailContainer(){
@@ -13,10 +13,13 @@ const [itemDetails, setItemsDetails] = useState([])
 const{itemId} = useParams()
 
 useEffect(()=>{
-    fetch(`https://dummyjson.com/products/${itemId}`)
-    .then(res => res.json())
-    .then(data => setItemsDetails(data))
-    //   .then(data=>console.log(data)) 
+
+    const getAndSetItemUnit = async () =>{
+        const item = await getItem(itemId)
+        setItemsDetails(item)        
+    }
+    getAndSetItemUnit()
+
 }, [itemId])
 
     return(
